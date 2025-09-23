@@ -1,0 +1,11 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.667 336H559.667C610.5 336 659.251 356.193 695.196 392.138C731.14 428.082 751.334 476.833 751.334 527.667C751.334 544.641 744.591 560.919 732.588 572.921C720.586 584.924 704.308 591.667 687.334 591.667H16.667" stroke="#8A8D99" stroke-width="64" stroke-miterlimit="10"/>
+<path d="M16.667 464H80.667" stroke="#8A8D99" stroke-width="64" stroke-miterlimit="10"/>
+<path d="M144.333 464H208.333" stroke="#8A8D99" stroke-width="64" stroke-miterlimit="10"/>
+<path d="M272.333 464H336" stroke="#8A8D99" stroke-width="64" stroke-miterlimit="10"/>
+<path d="M400 464H464" stroke="#8A8D99" stroke-width="64" stroke-miterlimit="10"/>
+<path d="M559.667 336V464H740.333" stroke="#8A8D99" stroke-width="64" stroke-miterlimit="10"/>
+<path d="M783.334 687.667H16.667" stroke="#8A8D99" stroke-width="64" stroke-miterlimit="10"/>
+<path d="M272.333 336L176.333 240.333V208.333L272.333 112.667" stroke="#8A8D99" stroke-width="64" stroke-miterlimit="10"/>
+<path d="M176.333 112.667H336" stroke="#8A8D99" stroke-width="64" stroke-miterlimit="10"/>
+</svg>

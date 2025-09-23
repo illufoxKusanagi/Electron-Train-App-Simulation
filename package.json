@@ -1,0 +1,26 @@
+{
+  "name": "train-simulation-frontend",
+  "version": "1.0.0",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "export": "next export",
+    "lint": "next lint",
+    "electron": "electron .",
+    "electron-dev": "concurrently \"npm run dev\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-pack": "electron-builder",
+    "dist": "npm run build && npm run export && electron-builder"
+  },
+  "dependencies": {
+    "next": "^14.2.32",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "electron": "^38.1.2",
+    "electron-builder": "^24.6.4",
+    "wait-on": "^7.0.1"
+  }
+}

@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/constant-active.svg</file>
+        <file>icons/constant-disabled.svg</file>
+        <file>icons/electrical-active.svg</file>
+        <file>icons/electrical-disabled.svg</file>
+        <file>icons/expand.svg</file>
+        <file>icons/play-active.svg</file>
+        <file>icons/play-disabled.svg</file>
+        <file>icons/right-arrow-active.svg</file>
+        <file>icons/right-arrow-disabled.svg</file>
+        <file>icons/running-active.svg</file>
+        <file>icons/running-disabled.svg</file>
+        <file>icons/train-active.svg</file>
+        <file>icons/train-disabled.svg</file>
+        <file>icons/train-track-disabled.svg</file>
+        <file>icons/train-track-active.svg</file>
+        <file>icons/collapse.svg</file>
+        <file>icons/upload.svg</file>
+        <file>icons/arrow-down.svg</file>
+        <file>icons/arrow-down-disabled.svg</file>
+        <file>icons/arrow-up.svg</file>
+        <file>icons/arrow-up-disabled.svg</file>
+        <file>icons/speed-disabled.svg</file>
+        <file>icons/speed-active.svg</file>
+        <file>icons/friction-disabled.svg</file>
+        <file>icons/friction-active.svg</file>
+        <file>icons/power-disabled.svg</file>
+        <file>icons/power-active.svg</file>
+        <file>icons/category-collapse-disabled.svg</file>
+        <file>icons/category-collapse.svg</file>
+        <file>icons/category-disabled.svg</file>
+        <file>icons/category-active.svg</file>
+        <file>icons/arrow-down.ico</file>
+        <file>icons/arrow-down-black.svg</file>
+        <file>icons/12-train.png</file>
+        <file>icons/6-train.png</file>
+        <file>icons/8-train.png</file>
+        <file>icons/10-train.png</file>
+        <file>icons/energy.svg</file>
+        <file>icons/energy-disabled.svg</file>
+        <file>icons/14-train.png</file>
+        <file>icons/trainSimulationAppLogo.png</file>
+    </qresource>
+</RCC>
