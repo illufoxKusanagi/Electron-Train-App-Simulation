@@ -1,31 +1,19 @@
+# Build directories
+**/build/
+**/build-*/
+/backend/build/
+/frontend/.next/
+/frontend/out/
+/frontend/build/
+
+# Qt build artifacts
 *.idx
 *.o
 *.obj
 *.tmp
 *.log
 *.user
-/backend/build
-/.vscode
-/node_modules
-controllers/simulation
-dummy.txt
-.auth
-.env
-CMakeLists.txt.user
-
-# C++ objects and libs
-*.slo
-*.lo
-*.o
-*.a
-*.la
-*.lai
-*.so
-*.so.*
-*.dll
-*.dylib
-
-# Qt-es
+CMakeLists.txt.user*
 object_script.*.Release
 object_script.*.Debug
 *_plugin_import.cpp
@@ -43,35 +31,30 @@ ui_*.h
 *.qmlc
 *.jsc
 Makefile*
-*build-*
 *.qm
 *.prl
-
-# Qt unit tests
 target_wrapper.*
-
-# QtCreator
 *.autosave
-
-# QtCreator Qml
 *.qmlproject.user
 *.qmlproject.user.*
-
-# QtCreator CMake
-CMakeLists.txt.user*
-
-# QtCreator 4.8< compilation database
 compile_commands.json
-
-# QtCreator local machine specific files for imported projects
 *creator.user*
-
 *_qmlcache.qrc
 
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# C++ objects and libs
+*.slo
+*.lo
+*.a
+*.la
+*.lai
+*.so
+*.so.*
+*.dll
+*.dylib
 
-# dependencies
+# Node.js dependencies
 /node_modules
+/frontend/node_modules
 /.pnp
 .pnp.*
 .yarn/*
@@ -80,34 +63,35 @@ compile_commands.json
 !.yarn/releases
 !.yarn/versions
 
-# testing
+# Testing
 /coverage
 
-# next.js
-/.next/
+# Production builds
 /out/
 
-# production
-/build
+# Environment and config files
+.env*
+.auth
 
-# misc
-.DS_Store
-*.pem
-
-# debug
+# Debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# OS generated files
+.DS_Store
+*.pem
 
-# vercel
-.vercel
-
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
 
+# IDE
+/.vscode
+.vercel
+
+# Project specific
+controllers/simulation
+dummy.txt
 /docs
