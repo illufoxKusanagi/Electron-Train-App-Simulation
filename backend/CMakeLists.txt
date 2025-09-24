@@ -46,6 +46,20 @@ if(NOT SOURCES)
     )
 endif()
 
+set(HTTP_SERVER_SOURCES)
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/http_server/http_server.cpp")
+    list(APPEND HTTP_SERVER_SOURCES
+        "http_server/http_server.h"
+        "http_server/http_server.cpp"
+    )
+endif()
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/http_server/api_handler.cpp")
+    list(APPEND HTTP_SERVER_SOURCES
+        "http_server/api_handler.h"
+        "http_server/api_handler.cpp"
+    )
+endif()
+
 set(PROJECT_SOURCES
     main.cpp
 
@@ -166,6 +180,21 @@ qt_add_executable(TrainSimulationApp
 # )
 # endif()
 # endif()
+
+if(TARGET Qt${QT_VERSION_MAJOR}::HttpServer)
+    list(APPEND QT_LIBS Qt${QT_VERSION_MAJOR}::HttpServer)
+    target_compile_definitions(TrainSimulationApp PRIVATE HAVE_QT_HTTPSERVER)
+endif()
+
+if(TARGET Qt${QT_VERSION_MAJOR}::Charts)
+    list(APPEND QT_LIBS Qt${QT_VERSION_MAJOR}::Charts)
+    target_compile_definitions(TrainSimulationApp PRIVATE HAVE_QT_CHARTS)
+endif()
+
+if(TARGET Qt${QT_VERSION_MAJOR}::Concurrent)
+    list(APPEND QT_LIBS Qt${QT_VERSION_MAJOR}::Concurrent)
+    target_compile_definitions(TrainSimulationApp PRIVATE HAVE_QT_CONCURRENT)
+endif()
 
 # target_link_libraries(TrainSimulationApp PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 # target_link_libraries(TrainSimulationApp PRIVATE Qt6::Concurrent)
