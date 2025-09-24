@@ -1,6 +1,6 @@
-/home/illufoxkasunagi/Documents/NewTrainApp/backend/build/Desktop_Qt_6_9_2-Debug/TrainSimulationApp_autogen/RDF3ATUBBW/moc_auth_manager.cpp: /home/illufoxkasunagi/Documents/NewTrainApp/backend/auth/auth_manager.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/build/Desktop_Qt_6_9_2-Debug/TrainSimulationApp_autogen/moc_predefs.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/auth/user_manager.h \
+/home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/build/Desktop_Qt_6_9_2-Debug/TrainSimulationApp_autogen/RDF3ATUBBW/moc_auth_manager.cpp: /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/auth/auth_manager.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/build/Desktop_Qt_6_9_2-Debug/TrainSimulationApp_autogen/moc_predefs.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/auth/user_manager.h \
   /opt/Qt/6.9.2/gcc_64/include/QtCore/QCoreApplication \
   /opt/Qt/6.9.2/gcc_64/include/QtCore/QCryptographicHash \
   /opt/Qt/6.9.2/gcc_64/include/QtCore/QDir \

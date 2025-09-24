@@ -1,20 +1,20 @@
-/home/illufoxkasunagi/Documents/NewTrainApp/backend/build/Desktop_Qt_6_9_2-Debug/TrainSimulationApp_autogen/37CLH4O34Q/moc_resistance_handler.cpp: /home/illufoxkasunagi/Documents/NewTrainApp/backend/controllers/simulation/resistance_handler.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/build/Desktop_Qt_6_9_2-Debug/TrainSimulationApp_autogen/moc_predefs.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/auth/auth_manager.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/auth/user_manager.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/core/appcontext.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/models/constant_data.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/models/efficiency_data.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/models/energy_data.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/models/load_data.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/models/mass_data.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/models/moving_data.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/models/power_data.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/models/resistance_data.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/models/simulation_data.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/models/station_data.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/models/train_data.h \
-  /home/illufoxkasunagi/Documents/NewTrainApp/backend/models/train_motor_data.h \
+/home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/build/Desktop_Qt_6_9_2-Debug/TrainSimulationApp_autogen/37CLH4O34Q/moc_resistance_handler.cpp: /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/controllers/simulation/resistance_handler.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/build/Desktop_Qt_6_9_2-Debug/TrainSimulationApp_autogen/moc_predefs.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/auth/auth_manager.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/auth/user_manager.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/core/appcontext.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/models/constant_data.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/models/efficiency_data.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/models/energy_data.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/models/load_data.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/models/mass_data.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/models/moving_data.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/models/power_data.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/models/resistance_data.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/models/simulation_data.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/models/station_data.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/models/train_data.h \
+  /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/models/train_motor_data.h \
   /opt/Qt/6.9.2/gcc_64/include/QtCore/QCoreApplication \
   /opt/Qt/6.9.2/gcc_64/include/QtCore/QCryptographicHash \
   /opt/Qt/6.9.2/gcc_64/include/QtCore/QDir \

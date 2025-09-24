@@ -1,2 +1,2 @@
-set(__QT_DEPLOY_TARGET_TrainSimulationApp_FILE /home/illufoxkasunagi/Documents/NewTrainApp/backend/build/Desktop_Qt_6_9_2-Debug/TrainSimulationApp)
+set(__QT_DEPLOY_TARGET_TrainSimulationApp_FILE /home/illufoxkasunagi/Documents/NewestTrainApp/Electron-Train-App-Simulation/backend/build/Desktop_Qt_6_9_2-Debug/bin/TrainSimulationApp)
 set(__QT_DEPLOY_TARGET_TrainSimulationApp_TYPE EXECUTABLE)

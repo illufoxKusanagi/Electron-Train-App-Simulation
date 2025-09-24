@@ -5,17 +5,20 @@
   "description": "Train Simulation App with Qt Backend and Electron Frontend",
   "main": "electron/main.js",
   "scripts": {
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
-    "dev:frontend": "wait-on http://localhost:3000 && concurrently \"npm run next:dev\" \"npm run electron:dev\"",
+    "dev": "concurrently \"npm run dev:frontend\"",
+    "dev:frontend": "concurrently \"npm run next:dev\" \"npm run electron:dev:wait\"",
     "dev:backend": "cd backend && ./scripts/dev-run.sh",
     "next:dev": "cd frontend && npx next dev",
     "electron:dev": "electron electron/main.js",
+    "electron:dev:wait": "wait-on http://localhost:3000 && electron electron/main.js",
     "build": "npm run build:frontend && npm run build:electron",
     "build:frontend": "cd frontend && npx next build",
     "build:electron": "electron-builder",
     "install:backend": "echo 'Backend uses Qt/CMake - no npm dependencies'",
     "clean": "rm -rf backend/build frontend/.next dist",
-    "postinstall": "electron-builder install-app-deps"
+    "postinstall": "electron-builder install-app-deps",
+    "test:backend": "cd backend && ./scripts/dev-run.sh",
+    "test:frontend": "npm run next:dev"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
