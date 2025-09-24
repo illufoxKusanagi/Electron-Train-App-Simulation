@@ -6,8 +6,6 @@
 *.user
 /build
 /.vscode
-/.trunk
-/formulas
 controllers/simulation
 dummy.txt
 .auth
@@ -72,3 +70,5 @@ compile_commands.json
 # For electron & Next.JS specific
 node_modules/
 .next/
+
+/docs
