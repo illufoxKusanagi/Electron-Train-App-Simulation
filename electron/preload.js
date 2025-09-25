@@ -8,7 +8,7 @@ contextBridge.exposeInMainWorld("electron", {
     versions: process.versions,
 });
 
-contextBridge.exposeInIsolatedWorld("electronApi", {
+contextBridge.exposeInIsolatedWorld(1001, "electronApi", {
     toggleDevTools: () => ipcRenderer.invoke('toggle-devtools'),
     platform: process.platform,
     version: process.versions.electron,

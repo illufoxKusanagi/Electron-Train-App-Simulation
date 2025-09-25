@@ -5,18 +5,22 @@ export interface InputType {
   unit?: string;
   type: "field" | "dropdown" | "upload" | "field-upload";
   name: string;
-  value?: number | string;
-  isReadOnly?: boolean;
   placeholder?: string;
+  isReadOnly?: boolean;
   options?: string[]; // For dropdown
   requiredColumns?: number; // For CSV upload
+}
+
+export interface InputWidgetProps {
+  inputType: InputType;
+  control: Control<any>;
+  onFileLoad?: (name: string, data: number[][]) => void;
 }
 
 export interface InputFieldProps {
   label: string;
   unit?: string;
   name: string;
-  value?: number;
   placeholder?: string;
   isReadOnly?: boolean;
   control: Control<any>;
@@ -27,16 +31,15 @@ export interface InputDropdownProps {
   name: string;
   options: string[];
   value?: string | number;
-  onChange?: (value: string | number) => void;
+  control: Control<any>;
 }
 
 export interface InputUploadProps {
-  label: string;
+  label?: string;
   name: string;
   requiredColumns?: number;
-  targetColumns?: number[];
+  control: Control<any>;
   onFileLoad?: (filePath: string, data: number[][]) => void;
-  onError?: (error: string) => void;
 }
 
 export interface InputFieldUploadProps {

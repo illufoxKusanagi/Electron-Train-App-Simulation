@@ -5,6 +5,7 @@
 /frontend/.next/
 /frontend/out/
 /frontend/build/
+/backend/widgets/
 
 # Qt build artifacts
 *.idx

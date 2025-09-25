@@ -13,21 +13,10 @@ export function InputField({
   label,
   unit,
   name,
-  value = 0,
   placeholder = "enter value...",
   isReadOnly = false,
   control,
 }: InputFieldProps) {
-  const [inputValue, setInputValue] = useState<string>(
-    value !== 0 ? value.toString() : ""
-  );
-  const [isModified, setIsModified] = useState(false);
-
-  useEffect(() => {
-    if (value !== 0 || !isModified) {
-      setInputValue(value.toString());
-    }
-  }, [value, isModified]);
   return (
     <FormField
       control={control}
@@ -45,11 +34,22 @@ export function InputField({
                 className={`flex-1 ${
                   isReadOnly ? "bg-blue-50 border-blue-200" : ""
                 }`}
-                {...field}
+                value={field.value === 0 ? "0" : field.value?.toString() ?? ""}
                 onChange={(e) => {
-                  const value = e.target.value;
-                  field.onChange(value === "" ? "" : Number(value));
+                  const inputValue = e.target.value;
+
+                  if (inputValue === "") {
+                    // Treat empty as 0
+                    field.onChange(0);
+                  } else {
+                    const numericValue = Number(inputValue);
+                    if (!isNaN(numericValue)) {
+                      field.onChange(numericValue);
+                    }
+                  }
                 }}
+                onBlur={field.onBlur}
+                name={field.name}
               />
               {unit && (
                 <span className="text-sm text-gray-600 min-w-fit whitespace-nowrap">

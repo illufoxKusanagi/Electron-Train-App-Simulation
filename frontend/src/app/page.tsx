@@ -108,17 +108,8 @@ export default function Home() {
 
   return (
     <SidebarProvider defaultOpen={false}>
-      {/* <div className="sticky top-30">
-      </div> */}
       <div className="flex-1 flex flex-col min-h-screen">
-        {/* Header */}
-        {/* <div className="flex flex-row sticky top-0 z-20">
-        </div> */}
         <div className="sticky top-0 z-10 bg-background/80 backdrop-blur-sm border-b">
-          {/* <div className="flex flex-row">
-            <AppSidebar />
-            <SidebarTrigger size="lg" />
-          </div> */}
           <div className="flex justify-between ml-30 p-4">
             <div className="flex items-center gap-4">
               <Badge
@@ -130,9 +121,9 @@ export default function Home() {
               </Badge>
             </div>
             <div className="flex flex-row gap-4">
-              <Button>
-                <Link href={"/main"}>Mulai</Link>
-              </Button>
+              <Link href={"/main"}>
+                <Button>Mulai</Button>
+              </Link>
               <ModeToggle />
             </div>
           </div>

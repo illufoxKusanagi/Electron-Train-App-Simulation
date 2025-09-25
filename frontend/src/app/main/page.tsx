@@ -78,11 +78,12 @@ export default function Main() {
       wheelDiameter: 860,
       mass_P: 70,
       gearRatio: 3,
-      load: undefined,
+      load: 0,
       carLength: 20,
       loadCondition: "AW4",
     },
   });
+  }
 
   const inputFormDatas = [
     {

@@ -31,7 +31,7 @@ export function AppSidebar() {
       icon: Home,
     },
     {
-      title: "E-TIcketing",
+      title: "E-Ticketing",
       url: "#",
       icon: Ticket,
     },
