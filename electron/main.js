@@ -12,29 +12,28 @@ function createWindow() {
             contextIsolation: true,
             nodeIntegration: false,
         },
-        show: false // Don't show until ready
+        show: false
     });
 
-    // Load the frontend
     mainWindow.loadURL("http://localhost:3000");
 
-    // Show when ready
     mainWindow.once('ready-to-show', () => {
         mainWindow.show();
         console.log('🎉 Electron app is ready!');
     });
 
-    // Handle failed loading
-    mainWindow.webContents.on('did-fail-load', () => {
-        console.log('⏳ Frontend not ready, retrying in 2 seconds...');
-        setTimeout(() => {
-            mainWindow.reload();
-        }, 2000);
-    });
-
-    if (process.env.NODE_ENV === "development") {
+    // Enable DevTools in development
+    const isDev = process.env.NODE_ENV === 'development' || process.argv.includes('--dev');
+    if (isDev) {
         mainWindow.webContents.openDevTools();
     }
+
+    // Always allow F12 toggle
+    mainWindow.webContents.on('before-input-event', (event, input) => {
+        if (input.key === 'F12') {
+            mainWindow.webContents.toggleDevTools();
+        }
+    });
 }
 
 app.whenReady().then(() => {

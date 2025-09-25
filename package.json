@@ -2,48 +2,35 @@
   "name": "electron-train-app-simulation",
   "version": "1.0.0",
   "private": true,
+  "workspaces": [
+    "frontend"
+  ],
   "description": "Train Simulation App with Qt Backend and Electron Frontend",
   "main": "electron/main.js",
   "scripts": {
     "dev": "chmod +x start-dev.sh && ./start-dev.sh",
     "dev:separate": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:backend": "cd backend && chmod +x scripts/smart-run.sh && ./scripts/smart-run.sh",
-    "dev:frontend": "cd frontend && npx next dev",
+    "dev:frontend": "npm run --workspace=frontend dev",
     "electron:dev": "electron electron/main.js",
     "build:backend:force": "cd backend && chmod +x scripts/dev-run.sh && ./scripts/dev-run.sh",
     "build:backend:existing": "cd backend && chmod +x scripts/existing-dev-run.sh && ./scripts/existing-dev-run.sh",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "clean": "npm run clean:frontend && npm run clean:backend",
+    "clean:frontend": "cd frontend && rm -rf node_modules .next out build",
+    "clean:backend": "cd backend && rm -rf build* *.log",
+    "clean:all": "npm run clean && rm -rf node_modules"
   },
   "dependencies": {
-    "@radix-ui/react-slot": "^1.2.3",
-    "@tanstack/react-query": "^5.90.1",
-    "axios": "^1.12.2",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.544.0",
-    "next": "15.5.3",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "recharts": "^3.2.1",
-    "tailwind-merge": "^3.3.1"
+    "axios": "^1.12.2"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
     "@types/electron": "^1.4.38",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
     "concurrently": "^9.2.1",
     "cross-env": "^10.0.0",
     "electron": "^38.1.2",
     "electron-builder": "^26.0.12",
     "electron-is-dev": "^3.0.1",
-    "eslint": "^9",
-    "eslint-config-next": "15.5.3",
-    "tailwindcss": "^4",
-    "tw-animate-css": "^1.3.8",
-    "typescript": "^5",
     "wait-on": "^7.2.0"
   },
   "build": {
