@@ -3,6 +3,89 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@layer components {
+  .heading-1 {
+    @apply text-4xl font-bold;
+  }
+
+  .heading-2 {
+    @apply text-3xl font-bold;
+  }
+
+  .heading-3 {
+    @apply text-2xl font-bold;
+  }
+
+  .heading-4 {
+    @apply text-xl font-bold;
+  }
+
+  .body-bigger-regular {
+    @apply text-2xl;
+  }
+
+  .body-bigger-bold {
+    @apply text-2xl font-bold;
+  }
+
+  .body-bigger-italic {
+    @apply text-2xl italic;
+  }
+
+  .body-bigger-bold-italic {
+    @apply text-2xl italic font-bold;
+  }
+
+  .body-big-regular {
+    @apply text-xl;
+  }
+
+  .body-big-bold {
+    @apply text-xl font-bold;
+  }
+
+  .body-big-italic {
+    @apply text-xl italic;
+  }
+
+  .body-big-bold-italic {
+    @apply text-xl italic font-bold;
+  }
+
+  .body-medium-regular {
+    @apply text-base;
+  }
+
+  .body-medium-bold {
+    @apply text-base font-bold;
+  }
+
+  .body-medium-italic {
+    @apply text-base italic;
+  }
+
+  .body-medium-bold-italic {
+    @apply text-base italic font-bold;
+  }
+
+  .body-small-regular {
+    @apply text-xs;
+  }
+
+  .body-small-bold {
+    @apply text-xs font-bold;
+  }
+
+  .body-small-italic {
+    @apply text-xs italic;
+  }
+
+  .body-small-bold-italic {
+    @apply text-xs italic font-bold;
+  }
+}
+
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -116,6 +199,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

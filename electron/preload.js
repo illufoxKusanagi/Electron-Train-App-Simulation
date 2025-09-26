@@ -8,12 +8,16 @@ contextBridge.exposeInMainWorld("electron", {
     versions: process.versions,
 });
 
+contextBridge.exposeInIsolatedWorld(1001, "electronApi", {
+    toggleDevTools: () => ipcRenderer.invoke('toggle-devtools'),
+    platform: process.platform,
+    version: process.versions.electron,
+    isElectron: true,
+})
+
 // const { contextBridge } = require("electron");
 
 // // contextBridge.exposeInMainWorld("electronAPI", {
-// //     platform: process.platform,
-// //     version: process.versions.electron,
-// //     isElectron: true,
 // // });
 // const { contextBridge, ipcRenderer } = require("electron");
 // contextBridge.exposeInMainWorld("backend", {
