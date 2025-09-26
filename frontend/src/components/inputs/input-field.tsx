@@ -1,4 +1,3 @@
-import { ChangeEvent, useEffect, useState } from "react";
 import { InputFieldProps } from "../../../types/input-types";
 import {
   FormControl,
@@ -23,7 +22,7 @@ export function InputField({
       name={name}
       render={({ field }) => (
         <FormItem className="w-full">
-          <FormLabel>{label}</FormLabel>
+          <FormLabel className="h-8 items-end">{label}</FormLabel>
           <FormControl>
             <div className="flex items-center gap-2">
               <Input

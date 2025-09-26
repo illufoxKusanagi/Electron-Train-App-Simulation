@@ -29,10 +29,10 @@ export function InputDropdown({
       name={name}
       render={({ field }) => (
         <FormItem className="w-full">
-          <FormLabel>{label}</FormLabel>
+          <FormLabel className="items-end">{label}</FormLabel>
           <Select onValueChange={field.onChange} defaultValue={field.value}>
             <FormControl>
-              <SelectTrigger>
+              <SelectTrigger className="w-full min-w-32 max-w-40">
                 <SelectValue placeholder={`Select ${label}`} />
               </SelectTrigger>
             </FormControl>

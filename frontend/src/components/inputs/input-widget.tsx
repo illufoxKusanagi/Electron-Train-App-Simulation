@@ -61,7 +61,6 @@ export function InputWidget({
             control={control}
           />
           <InputUpload
-            label={inputType.label}
             name={inputType.name}
             requiredColumns={inputType.requiredColumns}
             control={control}

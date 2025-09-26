@@ -12,7 +12,6 @@ import {
 import { useState, useRef } from "react";
 import { Upload, File, AlertCircle } from "lucide-react";
 import { toast } from "sonner";
-import { Control } from "react-hook-form";
 import { InputUploadProps } from "../../../types/input-types";
 
 export function InputUpload({
@@ -123,7 +122,7 @@ export function InputUpload({
               <Button
                 type="button"
                 variant="outline"
-                size="sm"
+                size="lg"
                 onClick={() => fileInputRef.current?.click()}
                 className="flex items-center gap-2"
               >

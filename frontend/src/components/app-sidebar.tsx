@@ -7,9 +7,11 @@ import {
   SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
+  SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
+  SidebarTrigger,
   useSidebar,
 } from "@/components/ui/sidebar";
 import { cn } from "@/lib/utils";
@@ -42,29 +44,34 @@ export function AppSidebar() {
     },
   ];
   return (
-    <Sidebar variant="floating" collapsible="icon">
-      <SidebarHeader
+    <Sidebar variant="floating" collapsible="icon" className="z-50">
+      <SidebarTrigger
+        size={"lg"}
+        className={cn("absolute", open ? "top-6 left-6" : "top-4 left-4")}
+      />
+      {/* <SidebarHeader
         className={cn(
           "overflow-hidden transition-all duration-500 ease-in-out",
-          open ? "px-4 pt-4 block opacity-100" : "p-0 opacity-0 hidden"
+          open ? "pt-2 block opacity-100" : "p-0 opacity-0 hidden"
         )}
       >
-        <SidebarMenu>
-          <SidebarMenuButton asChild className="hover:bg-accent/50 h-10">
-            <p className="body-big-bold text-center text-primary">SATE-JIP</p>
-          </SidebarMenuButton>
-        </SidebarMenu>
-      </SidebarHeader>
+        <p className="body-big-bold text-center text-primary ml-10">
+          Train Simulation App
+        </p>
+      </SidebarHeader> */}
 
       <SidebarContent
         className={cn(
           "flex flex-col gap-4 transition-all duration-300",
-          open ? "px-4 py-2" : "p-0 pt-4"
+          open ? "px-4 pt-16" : "pt-11"
         )}
       >
         <SidebarMenu>
           <SidebarGroup>
             <SidebarGroupContent className="space-y-1">
+              <SidebarGroupLabel className={cn(open ? "block" : "hidden")}>
+                dassdajs
+              </SidebarGroupLabel>
               <SidebarMenu>
                 {items.map((item) => (
                   <SidebarHeader key={item.title}>
